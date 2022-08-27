@@ -1,0 +1,168 @@
+body {
+  line-height: 1.6;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-detail-text {
+  font-size: 0.625rem;
+  color: #f18119;
+  margin: 0;
+  letter-spacing: 1.5px;
+  color: #f18119;
+  text-transform: uppercase;
+  border-top: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #ff713b, #ffa51d);
+}
+
+header {
+  position: relative;
+  background-image: url(./img/dark-ribs.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+  align-items: center;
+  padding: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: 300;
+  max-width: 375px;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.join-text {
+  color: #f18119;
+}
+
+main {
+  margin: 2.2em 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+.bbq-master {
+  margin: 0;
+  color: #404040;
+}
+
+.register-t {
+  margin: 0;
+  color: #f18119;
+  text-transform: uppercase;
+}
+
+p {
+  color: #5a5a5a;
+  font-weight: 300;
+  max-width: 320px;
+}
+
+input {
+  border: 1px solid #818181;
+  border-radius: 7px;
+  background-color: #fff;
+  width: 80%;
+  height: 37px;
+  margin: 14px;
+}
+
+input::placeholder {
+  color: #404040;
+  opacity: 0.5;
+  text-align: center;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  background-color: #fff;
+  height: 38px;
+  margin: 14px;
+  background: transparent linear-gradient(270deg, #ff713b 0%, #ffa51d 100%) 0%
+    0% no-repeat padding-box;
+  color: #fff;
+  letter-spacing: 1.5px;
+  padding: 0 2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.compliance {
+  color: #989898;
+  max-width: 183px;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+.top-detail-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1100px) {
+  .flex {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .body {
+    font-size: 1.125rem;
+  }
+
+  .top-detail-text {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  header {
+    width: 60%;
+    justify-content: center;
+    padding: 0 30px;
+    height: 100vh;
+  }
+
+  main {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
